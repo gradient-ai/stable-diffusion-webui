@@ -1,0 +1,10 @@
+enabled: true
+name: gradient-ai/stable-diffusion-webui
+image: ghcr.io/gradient-ai/stable-diffusion-webui:latest
+port: 7860
+healthChecks:
+  readiness:
+    path: /
+resources:
+  replicas: 1
+  instanceType: P6000
