@@ -38,7 +38,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            ghcr.io/gradient-ai/stable-diffusion-webui
+            ghcr.io/${{ github.repository }}
           tags: |
             type=raw,value=latest,enable={{is_default_branch}}
             type=ref,event=branch
@@ -87,4 +87,4 @@ jobs:
           CONTAINER_SHA: ${{ steps.set-container-sha.outputs.CONTAINER_SHA }}
         with:
           projectId: pioiimjvdsx
-          image: ghcr.io/${{ github.repository }}/stable-diffusion-webui:latest@${{ steps.build-push.outputs.digest }}
+          image: ghcr.io/${{ github.repository }}:latest@${{ steps.build-push.outputs.digest }}
