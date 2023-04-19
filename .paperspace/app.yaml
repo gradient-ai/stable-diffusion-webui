@@ -8,3 +8,16 @@ healthChecks:
 resources:
   replicas: 1
   instanceType: P6000
+  autoscaling:
+    enabled: true
+    maxReplicas: 2
+    metrics:
+      - metric: requestDuration
+        summary: average
+        value: 0.15
+      - metric: cpu
+        summary: average
+        value: 30
+      - metric: memory
+        summary: average
+        value: 45
