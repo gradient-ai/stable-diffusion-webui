@@ -79,7 +79,7 @@ jobs:
           echo "::set-output name=CONTAINER_SHA::${{ steps.build-push.outputs.digest }}"
           echo $CONTAINER_SHA
 
-      - uses: paperspace/deploy-action@v1.0
+      - uses: paperspace/deploy-action@v1.1
         name: Deploy to Paperspace
         id: deploy
         env:
