@@ -1,4 +1,4 @@
-apiVersion: latest
+apiVersion: v0alpha1
 enabled: true
 name: gradient-ai/stable-diffusion-webui
 image: ghcr.io/gradient-ai/stable-diffusion-webui:latest
