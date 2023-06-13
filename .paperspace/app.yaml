@@ -22,3 +22,7 @@ resources:
       - metric: memory
         summary: average
         value: 45
+integrations:
+  type: git-lfs
+  name: sd15
+  url: https://huggingface.co/runwayml/stable-diffusion-v1-5
