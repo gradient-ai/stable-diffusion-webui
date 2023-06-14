@@ -23,6 +23,9 @@ resources:
         summary: average
         value: 45
 integrations:
-  type: git-lfs
-  name: sd15
-  url: https://huggingface.co/runwayml/stable-diffusion-v1-5
+  - type: git-lfs
+    name: sd15
+    url: https://huggingface.co/runwayml/stable-diffusion-v1-5
+  - type: git-lfs
+    name: falcon-40b-instruct
+    url: https://huggingface.co/tiiuae/falcon-40b
