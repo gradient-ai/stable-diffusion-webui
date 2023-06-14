@@ -5,6 +5,7 @@ image: ghcr.io/gradient-ai/stable-diffusion-webui:latest
 healthChecks:
   readiness:
     path: /
+    port: 7860
 resources:
   ports: [7860]
   replicas: 1
