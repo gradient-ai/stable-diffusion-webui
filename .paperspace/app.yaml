@@ -1,14 +1,14 @@
-apiVersion: v0alpha1
+apiVersion: v1
 enabled: true
 name: gradient-ai/stable-diffusion-webui
 image: ghcr.io/gradient-ai/stable-diffusion-webui:latest
-port: 7860
 healthChecks:
   readiness:
     path: /
 resources:
+  ports: [7860]
   replicas: 1
-  instanceType: V100
+  machineType: V100
   autoscaling:
     enabled: true
     maxReplicas: 2
