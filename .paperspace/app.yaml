@@ -26,7 +26,9 @@ resources:
 integrations:
   - type: git-lfs
     name: sd15
+    path: /models/Stable-diffusion/v1-5-pruned-emaonly.safetensors
     url: https://huggingface.co/runwayml/stable-diffusion-v1-5
   - type: git-lfs
-    name: falcon-40b-instruct
-    url: https://huggingface.co/tiiuae/falcon-40b
+    name: analog-diffusion
+    url: https://huggingface.co/wavymulder/Analog-Diffusion
+    path: /models/Stable-diffusion/analog-diffusion-1.0.safetensors
