@@ -27,4 +27,4 @@ integrations:
   - type: git-lfs
     name: analog-diffusion
     url: https://huggingface.co/wavymulder/Analog-Diffusion
-    path: /models/Stable-diffusion/analog-diffusion-1.0.safetensors
+    path: /stable-diffusion-webui/models/Stable-diffusion/analog-diffusion-1.0.safetensors
