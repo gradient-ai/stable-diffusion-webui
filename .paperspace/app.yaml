@@ -11,7 +11,7 @@ resources:
   replicas: 1
   machineType: V100
   autoscaling:
-    enabled: false
+    enabled: true
     maxReplicas: 2
     metrics:
       - metric: requestDuration
