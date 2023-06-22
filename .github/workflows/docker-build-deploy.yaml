@@ -86,5 +86,5 @@ jobs:
           PAPERSPACE_API_KEY: ${{ secrets.PAPERSPACE_API_KEY }}
           CONTAINER_SHA: ${{ steps.set-container-sha.outputs.CONTAINER_SHA }}
         with:
-          projectId: pioiimjvdsx
+          projectId: pucc40nu8vn
           image: ghcr.io/${{ github.repository }}:latest@${{ steps.build-push.outputs.digest }}
